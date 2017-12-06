@@ -1,0 +1,26 @@
+.Header {
+  .navbar {
+    background: #3c4b55 none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    .navbar-brand {
+      color: #ffff00;
+      font-size: 32px;
+    }
+    .navbar-nav {
+      li {
+        a {
+          color: #ffffff;
+          font-size: 12px;
+          text-shadow: none;
+          &:hover {
+            color: lightgray;
+          }
+        }
+
+      }
+    }
+
+  }
+}
