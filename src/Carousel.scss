@@ -1,0 +1,28 @@
+.Carousel {
+  img {
+    max-width: 100%;
+  }
+  .slick-dots {
+    bottom: 20px;
+    li {
+      button {
+        color: white;
+        &:before {
+          font-size: 20px;
+          color: white;
+          opacity: 1;
+        }
+      }
+      &.slick-active {
+        button {
+          &:before {
+            color: lightgray;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+  }
+
+}

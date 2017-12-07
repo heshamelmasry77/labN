@@ -1,28 +1,35 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Slider from 'react-slick';
-
+import '../../../Carousel.css';
+import SlideImageOne from '../../../assets/images/image-1.jpg'; // Tell Webpack this JS file uses this image
+import SlideImageTwo from '../../../assets/images/image-2.jpg'; // Tell Webpack this JS file uses this image
+import SlideImageThree from '../../../assets/images/image-3.jpg'; // Tell Webpack this JS file uses this image
 
 class Carousel extends Component {
-  
   render() {
     const settings = {
       dots: true,
+      lazyLoad: true,
       infinite: false,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000
-      
-      
     };
     return (
-        <div>
-          <Slider {...settings}>
-            <div><h3>1</h3></div>
-            <div><h3>2</h3></div>
-            <div><h3>3</h3></div>
-          </Slider>
-        </div>
+      <div className="Carousel">
+        <Slider {...settings} arrows={false}>
+          <div>
+            <img src={SlideImageOne} alt="SlideImageOne" />
+          </div>
+          <div>
+            <img src={SlideImageTwo} alt="SlideImageTwo" />
+          </div>
+          <div>
+            <img src={SlideImageThree} alt="SlideImageThree" />
+          </div>
+        </Slider>
+      </div>
     );
   }
 }
