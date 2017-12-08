@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import '../../../Carousel.css';
-import SlideImageOne from '../../../assets/images/image-1.jpg'; // Tell Webpack this JS file uses this image
-import SlideImageTwo from '../../../assets/images/image-2.jpg'; // Tell Webpack this JS file uses this image
-import SlideImageThree from '../../../assets/images/image-3.jpg'; // Tell Webpack this JS file uses this image
+import SlideImageOne from '../../../assets/carousel-images/image-1.jpg'; // Tell Webpack this JS file uses this image
+import SlideImageTwo from '../../../assets/carousel-images/image-2.jpg'; // Tell Webpack this JS file uses this image
+import SlideImageThree from '../../../assets/carousel-images/image-3.jpg'; // Tell Webpack this JS file uses this image
 
 class Carousel extends Component {
   render() {

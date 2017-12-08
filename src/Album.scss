@@ -1,0 +1,37 @@
+.Album {
+  .thumbnail-container {
+    padding: 0;
+    a {
+      position: relative;
+      display: block;
+      .thumbnail {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+      img {
+        border: none;
+        padding: 0;
+        margin: 0;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        border-radius: 0;
+        &:hover {
+          -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+          filter: grayscale(50%);
+        }
+      }
+      .card-text {
+        position: absolute;
+        top: 45%;
+        padding: 0 1rem 0 1rem;
+        width: 100%;
+        color: #ffff00;
+        font-size: 16px;
+      }
+    }
+  }
+}
