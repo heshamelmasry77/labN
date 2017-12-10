@@ -1,6 +1,6 @@
 .Form {
   background: url('assets/form/form-img.jpg') no-repeat;
-  background-size: cover;
+  background-size: 100%;
   padding-bottom: 6rem;
   padding-top: 1rem;
 }
