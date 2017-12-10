@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import '../../../Album.css';
 import { Grid, Thumbnail, Col, Row } from 'react-bootstrap';
 import ThumbnailImageOne from '../../../assets/album-images/img-1.jpg'; // Tell Webpack this JS file uses this image
-import ThumbnailImageTwo from '../../../assets/album-images/img-2.jpg'; // Tell Webpack this JS file uses this image
+import ThumbnailImageTwo from '../../../assets/album-images/img-7.jpg'; // Tell Webpack this JS file uses this image
 import ThumbnailImageThree from '../../../assets/album-images/img-3.jpg'; // Tell Webpack this JS file uses this image
 import ThumbnailImageFour from '../../../assets/album-images/img-4.jpg'; // Tell Webpack this JS file uses this image
-import ThumbnailImageFive from '../../../assets/album-images/img-5.jpg'; // Tell Webpack this JS file uses this image
+import ThumbnailImageFive from '../../../assets/album-images/img-1.jpg'; // Tell Webpack this JS file uses this image
 import ThumbnailImageSix from '../../../assets/album-images/img-6.jpg'; // Tell Webpack this JS file uses this image
 import ThumbnailImageSeven from '../../../assets/album-images/img-7.jpg'; // Tell Webpack this JS file uses this image
 import ThumbnailImageEight from '../../../assets/album-images/img-8.jpg'; // Tell Webpack this JS file uses this image

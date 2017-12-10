@@ -2,6 +2,7 @@
   background: url('assets/form/form-img.jpg') no-repeat;
   background-size: cover;
   padding-bottom: 6rem;
+  padding-top: 1rem;
 }
 .Form .form-wrapper {
   padding-right: 0;
