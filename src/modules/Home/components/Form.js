@@ -3,61 +3,40 @@ import { Field, reduxForm } from 'redux-form';
 import {
   FormGroup,
   FormControl,
-  ControlLabel,
   Button,
-  Panel,
   Grid,
   Row,
   Col
 } from 'react-bootstrap';
+import '../../../Form.css';
 
 const validate = values => {
   const errors = {};
-  if (!values.name) {
-    errors.name = 'Required';
-  } else if (values.name.length > 200) {
-    errors.name = 'Must be 15 characters or less';
+  if (!values.full_name) {
+    errors.full_name = 'Required';
+  } else if (values.full_name.length > 15) {
+    errors.full_name = 'Must be 15 characters or less';
   }
-  if (!values.description) {
-    errors.description = 'Required';
-  } else if (values.description.length > 200) {
-    errors.description = 'Must be 75 characters or less';
-  }
-
   if (!values.url) {
     errors.url = 'Required';
   } else if (values.url.length > 150) {
     errors.url = 'Must be 15 characters or less';
   }
-  if (!values.about) {
-    errors.about = 'Required';
-  } else if (values.about.length > 500) {
-    errors.about = 'Must be 15 characters or less';
+
+  if (!values.email) {
+    errors.email = 'Required';
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    errors.email = 'Invalid email address';
   }
-  if (!values.picture) {
-    errors.picture = 'Required';
+  if (!values.contact_number) {
+    errors.contact_number = 'Required';
   }
-  // if (!values.email) {
-  //   errors.email = 'Required';
-  // } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-  //   errors.email = 'Invalid email address';
-  // }
-  // if (!values.age) {
-  //   errors.age = 'Required';
-  // } else if (isNaN(Number(values.age))) {
-  //   errors.age = 'Must be a number';
-  // } else if (Number(values.age) < 18) {
-  //   errors.age = 'Sorry, you must be at least 18 years old';
-  // }
+  if (!values.strategy) {
+    errors.strategy = 'Required';
+  }
   return errors;
 };
-const warn = values => {
-  const warnings = {};
-  // if (values.age < 19) {
-  //   warnings.age = 'Hmm, you seem a bit young...';
-  // }
-  return warnings;
-};
+
 const renderField = ({
   input,
   label,
@@ -65,7 +44,6 @@ const renderField = ({
   meta: { touched, error, warning }
 }) => (
   <FormGroup>
-    <ControlLabel>{label}</ControlLabel>
     <div>
       <FormControl {...input} placeholder={label} type={type} />
       {touched &&
@@ -74,89 +52,64 @@ const renderField = ({
     </div>
   </FormGroup>
 );
-const renderTextArea = ({ input, meta: { touched, error, warning } }) => (
-  <FormGroup>
-    <ControlLabel>Content</ControlLabel>
-    <div>
-      <FormControl
-        componentClass="textarea"
-        placeholder="write about the project"
-        {...input}
-        rows="10"
-        cols="40"
-      />
-      {touched &&
-        ((error && <span>{error}</span>) ||
-          (warning && <span>{warning}</span>))}
-    </div>
-  </FormGroup>
-);
 
 const SyncValidationForm = props => {
-  const { handleSubmit, pristine, reset, submitting } = props;
+  const { handleSubmit, submitting } = props;
   return (
-    <Grid style={{ margin: '20px' }}>
-      <Row className="text-left">
-        <Panel>
-          <form onSubmit={handleSubmit}>
-            <Field
-              name="name"
-              type="text"
-              component={renderField}
-              label="Name"
-            />
-            <Field
-              name="description"
-              type="text"
-              component={renderField}
-              label="Description"
-            />
-            <Field name="url" type="text" component={renderField} label="Url" />
-            <Field
-              name="about"
-              type="text"
-              component={renderTextArea}
-              label="About"
-            />
+    <div className="Form">
+      <Grid>
+        <Row className="text-left">
+          <Col xs={12} md={6}>
+            {' '}
+          </Col>
+          <Col xs={12} md={6} className="form-wrapper">
+            <form onSubmit={handleSubmit}>
+              <h3>Elegant Communication</h3>
+              <Field
+                name="full_name"
+                type="text"
+                component={renderField}
+                label="full name"
+              />
+              <Field
+                name="email"
+                type="email"
+                component={renderField}
+                label="email address *"
+              />
 
-            {/*<Field name="email" type="email" component={renderField} label="Email"/>*/}
-            {/*<Field name="age" type="number" component={renderField} label="Age"/>*/}
-            <Grid className="text-center">
-              <Row>
-                <Col sm={12} md={12}>
-                  <Button
-                    bsStyle="primary"
-                    type="submit"
-                    disabled={submitting}
-                    style={{ margin: '15px' }}
-                  >
-                    Submit
-                  </Button>
-                </Col>
-              </Row>
-              <Row>
-                <Col sm={12} md={12}>
-                  <Button
-                    bsStyle="danger"
-                    type="button"
-                    disabled={pristine || submitting}
-                    onClick={reset}
-                    style={{ margin: '15px' }}
-                  >
-                    Clear Values
-                  </Button>
-                </Col>
-              </Row>
-            </Grid>
-          </form>
-        </Panel>
-      </Row>
-    </Grid>
+              <Field
+                name="contact_number"
+                type="number"
+                component={renderField}
+                label="contact number"
+              />
+              <Field
+                name="url"
+                type="text"
+                component={renderField}
+                label="Url"
+              />
+
+              <Field name="favoriteColor" component="select">
+                <option>digital strategy or transformation</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </Field>
+
+              <Button bsStyle="primary" type="submit" disabled={submitting}>
+                CONTACT ME
+              </Button>
+            </form>
+          </Col>
+        </Row>
+      </Grid>
+    </div>
   );
 };
 
 export default reduxForm({
   form: 'syncValidation', // a unique identifier for this form
-  validate, // <--- validation function given to redux-form
-  warn // <--- warning function given to redux-form
+  validate // <--- validation function given to redux-form
 })(SyncValidationForm);

@@ -1,0 +1,43 @@
+.Footer {
+  background-color: #3c4b55;
+  color: rgb(181, 195, 202);
+  font-size: 1.2em;
+  padding-top: 3rem;
+  margin-top: 6rem;
+  font-weight: lighter;
+  text-align: center;
+  .social {
+    color: #ffff00;
+    font-size: 1.8em;
+    margin-top: -10px;
+    svg {
+      margin: 0 .2em;
+    }
+  }
+  .email {
+    color: #ffff00;
+    font-weight: lighter;
+    padding: 0;
+    p {
+      margin: 0;
+      span {
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+        &:nth-child(1) {
+          color: #858e96;
+          float: left;
+        }
+        &:nth-child(2) {
+          color: #858e96;
+          float: right;
+        }
+      }
+    }
+
+  }
+  .copyright {
+    color: #858e96;
+    font-size: .5em;
+  }
+}

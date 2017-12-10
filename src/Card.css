@@ -1,8 +1,21 @@
 .Card {
   position: absolute;
-  top: 7%;
+  top: 4%;
   left: 2%;
   z-index: 2;
+}
+@media screen and (max-width: 992px) {
+  .Card {
+    top: 1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Card {
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
 }
 .Card .card-wrapper {
   background-color: #3c4b55;
@@ -12,12 +25,19 @@
   width: 350px;
   padding: 20px;
 }
+@media screen and (max-width: 768px) {
+  .Card .card-wrapper .card-body {
+    width: 100%;
+    display: inline-block;
+  }
+}
 .Card .card-wrapper .card-body h4 {
   color: #ffff00;
 }
 .Card .card-wrapper .card-body p {
   font-size: 14px;
   color: #ffffff;
+  font-weight: lighter;
 }
 .Card .card-wrapper .card-body a {
   color: #3c4b55;

@@ -1,12 +1,25 @@
 .Card {
   position: absolute;
-  top: 7%;
+  top: 4%;
   left: 2%;
   z-index: 2;
+  @media screen and (max-width: 992px) {
+    top: 1%;
+  }
+  @media screen and (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
   .card-wrapper {
     background-color: #3c4b55;
     border-radius: 0;
     .card-body {
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        display: inline-block;
+      }
       width: 350px;
       padding: 20px;
       h4 {
@@ -15,6 +28,7 @@
       p {
         font-size: 14px;
         color: #ffffff;
+        font-weight: lighter;
       }
       a {
         color: #3c4b55;

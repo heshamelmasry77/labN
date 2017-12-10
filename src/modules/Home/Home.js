@@ -8,6 +8,11 @@ import Form from './components/Form';
 import store from '../Home/components/store';
 import { Provider } from 'react-redux';
 class Home extends Component {
+  constructor() {
+    super();
+    this.state = {};
+    Home.handleSubmit = Home.handleSubmit.bind(this);
+  }
   // This is the life cycle method that guarantees
   // that the DOM has been mounted in the browser successfully
   componentDidMount() {}
@@ -19,6 +24,9 @@ class Home extends Component {
     // debugger;
   }
 
+  static handleSubmit(values) {
+    console.log(values);
+  }
   render() {
     return (
       <div className="Home">
@@ -26,7 +34,7 @@ class Home extends Component {
         <Card />
         <Album />
         <Provider store={store}>
-          <Form />
+          <Form onSubmit={Home.handleSubmit} />
         </Provider>
       </div>
     );

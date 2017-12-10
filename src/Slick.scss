@@ -1,0 +1,31 @@
+.Slick {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  p {
+    font-size: 0.5em;
+  }
+  h6 {
+    color: #ffff00;
+    font-weight: lighter;
+  }
+
+  .slick-arrow {
+    display: none !important;
+    @media screen and (max-width: 992px) {
+      display: block !important;
+    }
+  }
+  .slick-prev {
+    @media screen and (max-width: 768px) {
+      left: 0;
+      z-index: 2;
+    }
+  }
+  .slick-next {
+    @media screen and (max-width: 768px) {
+      right: 0;
+      z-index: 2;
+    }
+  }
+}

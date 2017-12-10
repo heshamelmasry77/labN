@@ -1,0 +1,42 @@
+.Footer {
+  background-color: #3c4b55;
+  color: #b5c3ca;
+  font-size: 1.2em;
+  padding-top: 3rem;
+  margin-top: 6rem;
+  font-weight: lighter;
+  text-align: center;
+}
+.Footer .social {
+  color: #ffff00;
+  font-size: 1.8em;
+  margin-top: -10px;
+}
+.Footer .social svg {
+  margin: 0 0.2em;
+}
+.Footer .email {
+  color: #ffff00;
+  font-weight: lighter;
+  padding: 0;
+}
+.Footer .email p {
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .Footer .email p span {
+    display: none;
+  }
+}
+.Footer .email p span:nth-child(1) {
+  color: #858e96;
+  float: left;
+}
+.Footer .email p span:nth-child(2) {
+  color: #858e96;
+  float: right;
+}
+.Footer .copyright {
+  color: #858e96;
+  font-size: 0.5em;
+}

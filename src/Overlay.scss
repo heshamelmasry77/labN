@@ -1,6 +1,9 @@
 .overlay {
   position: fixed;
-  overflow: hidden;
+  overflow-y: scroll;
+  left: 0;
+  top: 0;
+  bottom: 0;
   padding: 0 50px;
   display: block;
   border-radius: 4px;
@@ -9,14 +12,36 @@
   visibility: hidden;
   z-index: 11;
   width: 100%;
-  left: initial;
   right: initial;
   height: 100%;
-  top: initial;
-  bottom: initial;
   background-color: #3c4b55;
   .content {
     opacity: 0;
+    .logo-responsive-menu {
+      color: #ffff00;
+      font-size: 32px;
+      text-transform: uppercase;
+      float: left;
+      margin-top: .3rem;
+    }
+    ul {
+      display: block;
+      clear: both;
+      list-style-type: none;
+      text-align: center;
+      padding: 0;
+      li {
+        padding: 1rem 0;
+        font-size: 1em;
+        a {
+          color: #ffff00;
+          font-weight: lighter;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
   &:before {
     position: absolute;
@@ -31,6 +56,8 @@
     transition: all 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   &.active {
+    padding: 1rem;
+    overflow: hidden;
     @media (min-width: 768px) {
       display: none;
     }
@@ -57,25 +84,40 @@
   }
 }
 
+[aria-hidden="true"] {
+  transition: opacity 1s, z-index 0s 1s;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0;
+}
+
+[aria-hidden="false"] {
+  transition: opacity 1s;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+}
+
 .hamburger-menu {
-  @media (min-width: 768px) {    display: none;
+  @media (min-width: 768px) {
+    display: none;
   }
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 3rem;
+  right: 1.5rem;
   bottom: 0;
   margin-top: 0;
-  width: 30px;
+  width: 40px;
   height: 50px;
   cursor: pointer;
   z-index: 11;
 }
 
 .bar {
-  width: 30px;
+  width: 40px;
   height: 5px;
   &:after, &:before {
-    width: 30px;
+    width: 40px;
     height: 5px;
   }
   position: relative;
@@ -113,4 +155,7 @@
       transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
     }
   }
+}
+.overflow-height-screen{
+  overflow:hidden; height:100%;
 }
