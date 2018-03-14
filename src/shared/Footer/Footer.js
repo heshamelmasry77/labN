@@ -20,7 +20,7 @@ const Footer = () => {
           <Col className="email box" xs={12} md={2}>
             <p>
               <span>|</span>
-              hello@lab.co.uk <span>|</span>
+              hello@example.co.uk <span>|</span>
             </p>
           </Col>
           <Col className="tel box" xs={12} md={2}>
@@ -35,7 +35,7 @@ const Footer = () => {
         <Row className="text-center">
           <Col md={12}>
             <p className="copyright">
-              © 2017 Copyright Lab Lateral. All Rights Reserved | Privacy &
+              © 2017 Copyright example Lateral. All Rights Reserved | Privacy &
               Cookies Policy
             </p>
           </Col>

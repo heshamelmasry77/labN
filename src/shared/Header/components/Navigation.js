@@ -20,7 +20,7 @@ class Navigation extends Component {
       <div className="Navigation">
         <div className="overlay">
           <div className="content">
-            <a className="logo-responsive-menu">lab</a>
+            <a className="logo-responsive-menu">Example</a>
             <ul>
               <li>
                 <a href="">OUR WORK</a>
