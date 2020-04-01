@@ -1,0 +1,135 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - node-sass-chokidar > node-sass > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-environment-jsdom > jsdom > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > extend:
+        patched: '2020-04-01T23:57:07.262Z'
+  'npm:hoek:20180212':
+    - node-sass-chokidar > node-sass > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-environment-jsdom > jsdom > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > sntp > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-01T23:57:07.262Z'
+  'npm:stringstream:20180511':
+    - node-sass-chokidar > node-sass > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > node-sass > node-gyp > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - node-sass-chokidar > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-environment-jsdom > jsdom > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > webpack > watchpack > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+    - react-scripts > jest > jest-cli > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request > stringstream:
+        patched: '2020-04-01T23:57:07.262Z'
+  'npm:tunnel-agent:20170305':
+    - node-sass-chokidar > node-sass > request > tunnel-agent:
+        patched: '2020-04-01T23:57:07.262Z'
